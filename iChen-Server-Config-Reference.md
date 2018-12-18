@@ -33,7 +33,7 @@ System Settings
 |`DatabaseSchema`|string|none|4.0|Schema in the configuration database to use, for database systems that require it (e.g. SQL Server for non-`dbo` schemas).|
 |`DataStore`|string|none|4.0|Connection name for the external archive database (if any).|
 |`JobModesFile`|string|`iChenServerJobModes.json`|4.0|Path to a text file containing the text names of the list of job-mnodes from `ID01` to `ID15`.|
-|`iChenWeb_ServerLogs_Path`|string|`./logs`|Path to the directory/folder containing server logs.|
+|`iChenWeb_ServerLogs_Path`|string|`./logs`|4.0|Path to the directory/folder containing server logs.|
 
 
 Controller Settings
@@ -42,7 +42,7 @@ Controller Settings
 |Key|Value|Default if missing|iChen® Server Version|Description|
 |---|:---:|:----------------:|:-------------------:|-----------|
 |`RecvAliveCounter`|unsigned integer|20|4.0|Number of seconds to wait to time-out a controller connection when `ALIVE` messages are not received.|
-|`Controller_Connection_Timeout`|unsigned float|30.0|Number of minutes to time-out a controller when no _heartbeat_'s are received. A timed-out controller is assumed to be off-line.|
+|`Controller_Connection_Timeout`|unsigned float|30.0|4.1|Number of minutes to time-out a controller when no _heartbeat_'s are received. A timed-out controller is assumed to be off-line.|
 |`Track_CycleData`|`true` or `false`|`false`|4.2|If `true`. a unique ID will be generated for each cycle data record, allowing tracking.|
 
 
