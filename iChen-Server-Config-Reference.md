@@ -1,5 +1,5 @@
-iChen® Server 4.0 Configuration File Reference
-==============================================
+iChen® Server 4 Configuration File Reference
+============================================
 
 File Name: `iChenServer.config`  
 Location: Same as server executable  
@@ -26,13 +26,13 @@ System Settings
 
 |Key|Value|Default if missing|Server Version|Description|
 |---|:---:|:----------------:|:-------------------:|-----------|
-|`IP`|unsigned short integer|none|4.0|For systems with multiple network adaptors, this allows binding the iChen® Server to a particular network adaptor by specifying its IP address.|
+|`IP`|unsigned short integer|none|4.0|For systems with multiple network adapters, this allows binding the iChen® Server to a particular network adapter by specifying its IP address.|
 |`StandAlone`|`true` or `false`|`true`|4.2|If `true`, the iChen® Server is operating as a single instance. If `false`, the iChen® Server instance is operating as part of a cluster.|
 |`DatabaseEnable`|`true` or `false`|`true`|4.2|If `false`, the configuration database is disabled and the iChen® Server operators in an online-only mode.|
 |`DatabaseVersion`|unsigned short integer|1|4.0|Version of the configuration database. This is for backward-compatibility purposes.|
-|`DatabaseSchema`|string|none|4.0|Schema in the configuration database to use, for database systems that require it (e.g. SQL Server for non-`dbo` schemas).|
+|`DatabaseSchema`|string|none|4.0|Schema in the configuration database to use, for database systems that require it (e.g. SQL Server for non-`dbo` schema's).|
 |`DataStore`|string|External archive database is disabled|4.0|Connection name for the external archive database (if any); the named connection must exist in the application config file under the `<connectionStrings>` section.  Alternatively, the raw ODBC connection string can be provided (version 4.2 and above).|
-|`JobModesFile`|string|`./assets/iChenServerJobModes.json`|4.0|Path to a text file containing the text names of the list of job-mnodes from `ID01` to `ID15`.|
+|`JobModesFile`|string|`./assets/iChenServerJobModes.json`|4.0|Path to a text file containing the text names of the list of job-modes from `ID01` to `ID15`.|
 |`iChenWeb_ServerLogs_Path`|string|`./logs`|4.0|Path to the directory/folder containing server logs.|
 
 
